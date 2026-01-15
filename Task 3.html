@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+
+nav {
+  background: #222;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00ffcc;
+}
+
+
+section {
+  padding: 90px 20px;
+  min-height: 100vh;
+}
+
+
+#about {
+  background: white;
+  text-align: center;
+}
+
+#about h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+
+#skills {
+  background: #eaeaea;
+}
+
+.skill-box {
+  max-width: 400px;
+  margin: auto;
+}
+
+.skill {
+  background: #222;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+#projects {
+  background: white;
+}
+
+.project {
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 400px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px gray;
+}
+
+
+#contact {
+  background: #eaeaea;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #00ffcc;
+  color: black;
+}
+
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+<section id="about">
+  <h1>Hi, I'm Vansh 👋</h1>
+  <p>I am a beginner web developer learning HTML, CSS & JavaScript.</p>
+</section>
+
+
+<section id="skills">
+  <h2 style="text-align:center;">My Skills</h2>
+  <div class="skill-box">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 style="text-align:center;">My Projects</h2>
+
+  <div class="project">
+    <h3>Calculator</h3>
+    <p>Basic calculator using HTML, CSS and JavaScript.</p>
+  </div>
+
+  <div class="project">
+    <h3>Image Gallery</h3>
+    <p>Simple image gallery with hover effects.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: vanshbisht**@gmail.com</p>
+  <p>Phone: +91 70********</p>
+  <button onclick="alert('Thank you for contacting!')">Say Hello</button>
+</section>
+
+<footer>
+  © 2026 My Portfolio
+</footer>
+
+</body>
+</html>
